@@ -1,0 +1,62 @@
+.radio{
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+
+  &--checkbox{
+    .radio__visible{
+      border-radius: rem(4px);
+
+      &:before{
+        background: url(../img/decorate/check.png) center center no-repeat;
+      }
+    }
+
+  }
+}
+
+.radio__elem{
+  display: none;
+
+  &:checked ~ .radio__visible{
+    &:before{
+      display: block;
+    }
+  }
+}
+
+.radio__visible{
+  width: rem(26px);
+  height: rem(26px);
+  position: relative;
+  border-radius: 50%;
+  background: white;
+
+
+
+  &:before{
+    content:"";
+    width: rem(14px);
+    height: rem(14px);
+    background: #E01F3D;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.radio{
+  margin-right: rem(20px);
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.radio__title{
+  margin-left: rem(10px);
+}
+
+

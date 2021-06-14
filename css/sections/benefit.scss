@@ -1,0 +1,62 @@
+.benefit{
+  text-align: center;
+  position: relative;
+
+  &:before{
+    content: url(img/decorate/Combinedshape.png);
+    position: absolute;
+    top: rem(50px);
+    right: 0;
+    transform: translateX(50%);
+    }
+ 
+    flex: 1;
+    padding: 0 3%;
+    &:first-child{
+      padding-left: 0;
+    }
+    &:last-child{
+      padding-right: 0;
+
+      &::before{
+        display: none;
+      }
+    }
+}
+
+.benefit__image-wrapper{
+  display: inline-block;
+  height: rem(126px);
+  width: rem(126px);
+  position: relative;
+  background: #F2F5F4;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.benefit__icon{
+  width: rem(70px);
+  height: rem(69px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.benefit__icon--bat{
+  width: rem(35px);
+}
+
+.benefit__title{
+  font-family: "Play";
+  font-weight: 700;
+  font-size: rem(24px);
+  text-align: center;
+}
+
+.benefit__desc{
+  font-family: "Play";
+  font-weight: 400;
+  color: $grey;
+  font-size: $baseFontSize;
+}

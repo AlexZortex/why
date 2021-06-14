@@ -1,0 +1,34 @@
+.interactive-avatar{
+  // border: rem(4px) solid#E01F3D;
+  border: rem(4px) solid transparent;
+  border-radius: 50%;
+  width: rem(80px);
+  height: rem(80px);
+  overflow: hidden;
+  position: relative;
+  margin-right: rem(5px);
+  &:last-child{
+    margin-right: 0;
+  }
+
+  &--active{
+  border-color: #E01F3D;
+  }
+}
+
+.interactive-avatar__link{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: block;
+}
+
+.interactive-avatar__img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}

@@ -1,0 +1,36 @@
+.benefits{
+  display: flex;
+}
+
+.benefits__section{
+  position: relative;
+  
+  &:before{
+   content: url(../img/decorate/red.png); 
+   position: absolute;
+   bottom: rem(-25px);
+   left: rem(60px);
+  }
+}
+
+.reviews__section{
+  position: relative;
+
+  &:before{
+    content: url(../img/decorate/sphere.png); 
+    position: absolute;
+    bottom: rem(-25px);
+    left: rem(90px);
+   }
+}
+
+.orders-section{
+  position: relative;
+ 
+   &:before{
+     content: url(../img/decorate/geksogon.png); 
+     position: absolute;
+     top: -2%;
+     right: rem(90px);
+    }
+ }

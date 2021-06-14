@@ -1,0 +1,55 @@
+$containerWidth: 940px;
+$baseFontSize: 18px; 
+$red: #E01F3D;
+$grey: #666666;
+$black: #292929;
+$white: #FFFFFF;
+$sectiongrey:#F5F5F5;
+
+.hero{
+  background-color: $sectiongrey;
+  height: 100vh;
+  min-height: rem(650px);
+  color: $black;
+  position: relative;
+
+  &:before{
+    position: absolute;
+    bottom: rem(-30px);
+    left: 80%;
+    content: url(img/decorate/decor.png);
+  }
+}
+
+.hero__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding:rem(24px)  rem(0px) rem(45px)  ;
+  background: url(img/bg/beats.png) right center / 50% auto no-repeat;
+}
+
+.hero__title-section{
+  width: 46%;
+}
+
+.hero__main-title{
+  text-transform: uppercase;
+  font-size: rem(48px);
+  font-family: "Play";
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: rem(15px);
+  line-height: 1.1;
+}
+
+.hero__title-desc{
+  font-size: rem(21px);
+  font-family: "Alegreya Sans";
+  font-weight: normal;
+  font-style: normal;
+  // max-width: rem(330px);
+  padding-right: 22%;
+  margin-bottom: rem(45px);
+}
