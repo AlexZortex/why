@@ -1,0 +1,15 @@
+.map{
+    background: url(img/bg/map.png) center center no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: "Play";
+    font-weight: 400;
+    font-size: rem(16px);
+    min-height: rem(650px);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
